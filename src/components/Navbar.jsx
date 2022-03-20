@@ -25,18 +25,18 @@ const Navbar = () => {
           </Link>
         </Menu.Item>
         <Menu.Item key="search">
-          <Link to="/mountain/search">산 검색</Link>
+          <Link to="/pages/mountain/search">산 검색</Link>
         </Menu.Item>
         <Menu.Item key="community">
-          <Link to="/community">커뮤니티</Link>
+          <Link to="/pages/community">커뮤니티</Link>
         </Menu.Item>
         {user ? (
           <Menu.Item key="my">
-            <Link to="/my">마이페이지</Link>
+            <Link to="/pages/my">마이페이지</Link>
           </Menu.Item>
         ) : (
           <Menu.Item key="login">
-            <Link to="/login">
+            <Link to="/pages/login">
               <AvatarWrapper icon={<UserOutlined />} />
             </Link>
           </Menu.Item>

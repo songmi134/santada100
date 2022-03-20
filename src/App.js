@@ -17,14 +17,14 @@ const App = () => {
       <BrowserRouter basename="">
         <Navbar />
         <Route path="/" exact component={Landing} />
-        <Route path="/login" exact component={Login} />
-        <Route path="/mountain/search" exact component={Search} />
-        <Route path="/mountain/search/:id" exact component={Detail} />
-        <Route path="/community" exact component={Community} />
-        <Route path="/community/new" exact component={WritingForm} />
-        <Route path="/community/update/:id" exact component={WritingForm} />
-        <Route path="/community/:id" component={CommunityDetail} />
-        <Route path="/my" component={My} />
+        <Route path="/pages/login" exact component={Login} />
+        <Route path="/pages/mountain/search" exact component={Search} />
+        <Route path="/pages/mountain/search/:id" exact component={Detail} />
+        <Route path="/pages/community" exact component={Community} />
+        <Route path="/pages/community/new" exact component={WritingForm} />
+        <Route path="/pages/community/update/:id" exact component={WritingForm} />
+        <Route path="/pages/community/:id" component={CommunityDetail} />
+        <Route path="/pages/my" component={My} />
       </BrowserRouter>
     </AuthProvider>
   );
